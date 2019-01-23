@@ -1,0 +1,12 @@
+Package: pollfishFunctions
+Title: Polish Functions
+Version: 0.0.0.9000
+Authors@R: person("Henry", "Cyranka", email = "henryf.cyranka@gmail.com", role = c("aut", "cre"))
+Description: Functions to manipulate data from Pollfish surveys
+Imports:
+    dplyr
+Depends: R (>= 3.5.0)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
