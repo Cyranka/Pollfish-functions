@@ -33,7 +33,7 @@ rank_question <- function(d_frame, x_var, y_var){
   my_levels <- p %>% pull(!!var_1) %>% unique() %>% parse_character()
   
   list_1 <- lapply(my_levels, function(i)filter(p,!!sym(x_var) == i) %>% ungroup() %>% select(-!!var_1))
-  list_1 <- lapply(list_1, function(i) i %>% spread(answer,percent) %>% mutate_at(vars(matches("[0-9]{1,3}")),~scales::percent(.,accuracy = 1)))
+  list_1 <- lapply(list_1, function(i) i %>% spread(answer,percent) %>% mutate_at(vars(matches("[0-9]{1,3}")),~scales::percent(.,accuracy = 0.1)))
   names(list_1) <- my_levels
   return(list_1)
 }
