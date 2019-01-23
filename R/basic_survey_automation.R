@@ -63,7 +63,7 @@ basic_survey_automation <- function(survey_file, single_questions = NULL,multipl
     
     x <<- read_pollfish_file(survey_file)
     print("File read")
-    lapply(basic_variables, function(i)rank_whole_question(x,i,rank_questions))
+    lapply(c(basic_variables,"sample"), function(i)rank_whole_question(x,i,rank_questions))
     
     setwd("..//")
   }  
