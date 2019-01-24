@@ -24,7 +24,7 @@ Function that will run all crosstabs for all specified questions with basic demo
 rank_choice <- c("Q7","Q8")
 multiple_choice <- c("Q2", "Q9")
 single_choice <-c("Q1","Q3","Q4","Q5","Q6", "Q11")
-basic_survey_automation("Pollfish_Survey.xls",sinle_questions = single_choice,multiple_questions= multiple_choice,rank_questions = rank_choice)
+basic_survey_automation("Pollfish_Survey.xls",single_questions = single_choice,multiple_questions= multiple_choice,rank_questions = rank_choice)
 }
 \keyword{Pollfish,}
 \keyword{basic}
